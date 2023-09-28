@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fibonacci Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="https://media.istockphoto.com/id/856816520/vector/golden-ratio-template-with-proportional-circles.jpg?s=612x612&w=0&k=20&c=Ukpd3mDwzFThwr4_6U7aTmVo9FkZt52Of7lv2Iru9U0=">
+</head>
+<body>
+    <h1>Fibonacci Calculator</h1>
+    <div class="container">
+        <label for="fibTermInput"><b>Input the Fibonacci term you're looking for:</b></label>
+        <br>
+        <input type="text" id="fibTermInput">
+        <br>
+        <button onclick="calculateFibonacci()"><b>CALCULATE</b></button>
+        <div id="fibonacciResultContainer">
+            <p id="fibonacciResult"></p>
+        </div>
+    </div>
+    
+    <div class="container">
+        <span class="switch-label" id="modeLabel">Light Mode</span>
+        <br>
+        <label class="switch">
+            <input type="checkbox" id="lightModeToggle">
+            <span class="slider"></span>
+        </label>
+    </div>
+
+    <b><p>by <a href="https://youtu.be/dQw4w9WgXcQ?si=BksDkJhXvdkGZea7" target="_blank">Kerby</a> (❁´◡`❁)</p></b>
+
+    <script src = "scripts.js"></script>
+</body>
+</html>
