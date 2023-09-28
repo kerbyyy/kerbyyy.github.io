@@ -28,10 +28,10 @@ function calculateFibonacci() {
     const lastStg = stagePow1 - stagePow2;
     const finalAns = lastStg / squareFive;
   
-    fibonacciResult.innerHTML = `F<sup>${fibTerm}</sup> = (${stageDiv1.toFixed(20)})<sup>${fibTerm}</sup> - (${stageDiv2.toFixed(20)})<sup>${fibTerm}</sup> ÷ ${squareFive.toFixed(20)}<br><br>` +
-      `F<sup>${fibTerm}</sup> = (${stagePow1.toLocaleString("en-US", { maximumFractionDigits: 20 })}) - (${stagePow2.toLocaleString("en-US", { maximumFractionDigits: 20 })}) ÷ ${squareFive.toFixed(20)}<br><br>` +
-      `F<sup>${fibTerm}</sup> = ${lastStg.toLocaleString("en-US", { maximumFractionDigits: 20 })} ÷ ${squareFive.toLocaleString("en-US", { maximumFractionDigits: 20 })}<br><br>` +
-      `F<sup>${fibTerm}</sup> = ${finalAns.toLocaleString("en-US", { maximumFractionDigits: 20 })}`;
+    fibonacciResult.innerHTML = `F<sub>${fibTerm}</sub> = (${stageDiv1.toFixed(20)})<sup>${fibTerm}</sup> - (${stageDiv2.toFixed(20)})<sup>${fibTerm}</sup> ÷ ${squareFive.toFixed(20)}<br><br>` +
+      `F<sub>${fibTerm}</sub> = (${stagePow1.toLocaleString("en-US", { maximumFractionDigits: 20 })}) - (${stagePow2.toLocaleString("en-US", { maximumFractionDigits: 20 })}) ÷ ${squareFive.toFixed(20)}<br><br>` +
+      `F<sub>${fibTerm}</sub> = ${lastStg.toLocaleString("en-US", { maximumFractionDigits: 20 })} ÷ ${squareFive.toLocaleString("en-US", { maximumFractionDigits: 20 })}<br><br>` +
+      `F<sub>${fibTerm}</sub> = ${finalAns.toLocaleString("en-US", { maximumFractionDigits: 20 })}`;
   
     // Clear the text box
     fibTermInput.value = '';
